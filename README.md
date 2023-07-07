@@ -46,7 +46,7 @@ That terminal will be your server.
 Then open multiple terminals and run the following command:
 
 ```bash
-`./client #server_port_number`
+./client #server_port_number
 ```
 
 Choose the same server port for client side.
