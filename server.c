@@ -13,7 +13,7 @@
 #define MAX_CLIENTS 100
 #define BUFFER_SZ 2048
 
-static _Atomic unsigned int cli_count = 0;
+static _Atomic unsigned int client_count = 0;
 static int uid = 10;
 
 /* Client structure */
@@ -105,7 +105,7 @@ void *handle_client(void *arg){
 	char name[32];
 	int leave_flag = 0;
 
-	cli_count++;
+	client_count++;
 	client_t *cli = (client_t *)arg;
 
 	// Name
@@ -151,7 +151,7 @@ void *handle_client(void *arg){
 	close(cli->sockfd);
   queue_remove(cli->uid);
   free(cli);
-  cli_count--;
+  client_count--;
   pthread_detach(pthread_self());
 
 	return NULL;
