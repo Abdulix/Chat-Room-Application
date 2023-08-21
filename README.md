@@ -55,3 +55,4 @@ Now, you can enjoy chatting with your many friends or clients.
 It will show text messages with names, date and time. For better user experience it has different colors for everyone.
 
 
+<img src="https://t.bkit.co/w_64e3f58d232e3.gif" />
